@@ -1,4 +1,4 @@
-# System-Monitor
+# System Performance Monitor
 
 A lightweight, user-friendly system monitoring tool built specifically for macOS that helps track system resource usage with explicit user consent and local data storage.
 
