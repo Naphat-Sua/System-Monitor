@@ -8,16 +8,16 @@ A lightweight, user-friendly system monitoring tool built specifically for macOS
 
 ## Features
 
-- 🖥️ Real-time monitoring of:
+- Real-time monitoring of:
   - CPU usage
   - Memory usage
   - Disk usage
-- 📊 Data visualization with live updates
-- 💾 Local data storage in macOS standard directories
-- 📈 CSV export functionality
-- 🔒 Privacy-focused with explicit user consent
-- ⚙️ Persistent settings
-- 📝 Comprehensive logging
+- Data visualization with live updates
+- Local data storage in macOS standard directories
+- CSV export functionality
+- Privacy-focused with explicit user consent
+- Persistent settings
+- Comprehensive logging
 
 ## Requirements
 
@@ -34,5 +34,25 @@ A lightweight, user-friendly system monitoring tool built specifically for macOS
 git clone https://github.com/naphat-sua/system-monitor.git
 
 cd system-monitor
-
+```
+2. Install required packages:
+```bash
 pip3 install psutil
+```
+3. Run
+```bash
+python3 main.py
+```
+All monitoring data is stored locally in:
+```bash
+~/Library/Logs/SystemMonitor/
+```
+
+## Privacy
+
+This application:
+- Stores all data locally on your machine
+- Requires explicit user consent before monitoring
+- Does not send any data over the network
+- Allows full control over monitored resources
+- Provides easy data cleanup options
