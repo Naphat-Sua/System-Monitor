@@ -1,58 +1,40 @@
-# System Performance Monitor
+# MacBook System Performance Monitor 🖥️📊
 
-A lightweight, user-friendly system monitoring tool built specifically for macOS that helps track system resource usage with explicit user consent and local data storage.
+A Python-based real-time system monitoring tool for macOS that tracks key performance metrics including CPU, memory, disk, network, battery, and temperature.
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Python](https://img.shields.io/badge/python-3.6+-green.svg)
-![Platform](https://img.shields.io/badge/platform-macOS-lightgrey.svg)
+![System Monitor Example](screenshot.png)  
+*Example monitoring output (replace with actual screenshot)*
 
 ## Features
 
-- Real-time monitoring of:
-  - CPU usage
-  - Memory usage
-  - Disk usage
-- Data visualization with live updates
-- Local data storage in macOS standard directories
-- CSV export functionality
-- Privacy-focused with explicit user consent
-- Persistent settings
-- Comprehensive logging
+- **Comprehensive Monitoring**:
+  - CPU Usage (total and per-core)
+  - Memory (RAM) utilization
+  - Disk space usage
+  - Network bandwidth (upload/download)
+  - Battery status and power state
+  - CPU temperature (requires optional tools)
 
-## Requirements
+- **User-Friendly Interface**:
+  - Clean terminal-based display
+  - Auto-refreshing output
+  - Human-readable units
+  - Color-coded percentages (optional)
 
-- macOS 10.12 or later
-- Python 3.6+
-- Required packages:
-  - `psutil`
-  - `tkinter` (usually comes with Python)
+- **Advanced Functionality**:
+  - Configurable update interval
+  - Cross-platform core functionality (macOS focus)
+  - Expandable architecture for custom metrics
 
 ## Installation
 
-1. Clone the repository:
 ```bash
-git clone https://github.com/naphat-sua/system-monitor.git
+# Clone repository
+git clone https://github.com/yourusername/macbook-system-monitor.git
+cd macbook-system-monitor
 
-cd system-monitor
-```
-2. Install required packages:
-```bash
-pip3 install psutil
-```
-3. Run
-```bash
-python3 main.py
-```
-All monitoring data is stored locally in:
-```bash
-~/Library/Logs/SystemMonitor/
-```
+# Install dependencies
+pip install psutil
 
-## Privacy
-
-This application:
-- Stores all data locally on your machine
-- Requires explicit user consent before monitoring
-- Does not send any data over the network
-- Allows full control over monitored resources
-- Provides easy data cleanup options
+# Optional temperature monitoring tools
+brew install osx-cpu-temp  # or gem install iStats
