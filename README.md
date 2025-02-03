@@ -2,9 +2,6 @@
 
 A Python-based real-time system monitoring tool for macOS that tracks key performance metrics including CPU, memory, disk, network, battery, and temperature.
 
-![System Monitor Example](screenshot.png)  
-*Example monitoring output (replace with actual screenshot)*
-
 ## Features
 
 - **Comprehensive Monitoring**:
@@ -30,7 +27,7 @@ A Python-based real-time system monitoring tool for macOS that tracks key perfor
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/macbook-system-monitor.git
+git clone https://github.com/naphat-sua/system-monitor.git
 cd macbook-system-monitor
 
 # Install dependencies
